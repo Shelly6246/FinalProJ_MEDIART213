@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Art Map</title>
+    <link rel="stylesheet" href="map3_4.css">
+</head>
+<body>
+    <!-- 添加返回图标 -->
+    <a href="index2.html" title="Double-click to return to homepage" class="return-link">
+      <img src="asset/backbutton1.gif" alt="Return to homepage" class="return-icon draggable" 
+           style="top: 700px; left: 1300px;">
+    </a>
+    
+    <div class="container">
+        <!-- 左侧：地图区域 -->
+        <div class="map-container">
+            <!-- 地图背景 -->
+            <img src="asset/mapdraft4.gif" class="map-img" alt="Artistic Map">
+            
+            <!-- 位置点图标 -->
+            <img src="asset/spot1.gif" class="spot-icon" 
+                 style="top: 24%; left: 22%;" 
+                 data-id="1" 
+                 alt="Location 1">
+            
+            <img src="asset/spot1.gif" class="spot-icon" 
+                 style="top: 82%; left: 56%;" 
+                 data-id="2" 
+                 alt="Location 2">
+            
+            <img src="asset/spot1.gif" class="spot-icon" 
+                 style="top: 56%; left: 74%;" 
+                 data-id="3" 
+                 alt="Location 3">
+        </div>
+        
+        <!-- 右侧：内容显示窗口 -->
+        <div class="window-container">
+            <!-- 窗口背景 -->
+            <img src="asset/window1.gif" class="window-img" alt="Display Window">
+            
+            <!-- 内容区域 -->
+            <div class="content-area" id="content-area">
+                <div class="default-message click-a-spot-message">
+                    <img src="asset/buslegend2.gif" alt="Click a spot on the map">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 添加拖拽功能脚本 -->
+    <script src="index2.js"></script>
+    <script src="map3_3.js"></script>
+</body>
+</html>

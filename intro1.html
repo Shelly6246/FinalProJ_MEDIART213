@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pine Point Intro</title>
+    <link rel="stylesheet" href="intro1.css" />
+</head>
+<body>
+
+    <!-- 背景视频 -->
+    <video id="bg-video" autoplay muted loop playsinline>
+        <source src="asset/C0004.MP4" type="video/mp4" />
+    </video>
+
+    <!-- 第一段文字（自动渐入） -->
+    <div class="intro-text" id="introText">
+        <h2>Life is taking bus.</h2>
+        <h2>Bus after bus, line after line.<br>But one line holds the cradle of my time.</h2>
+        <span class="click-indicator" id="continueBtn">click</span>
+    </div>
+
+    <!-- 第二段内容（点击后显示） -->
+    <div class="content hidden" id="nextContent">
+        <h1>Public Tranport Line 198</h1>
+
+        <div class="photo-container">
+            <img src="assets/photo1.png" alt="">
+            <img src="assets/photo2.png" alt="">
+        </div>
+
+        <!-- 跳转按钮（只有点击这个才跳转） -->
+        <div id="goNext" class="next-button">
+            Next
+        </div>
+    </div>
+
+    <script src="intro1.js"></script>
+</body>
+</html>
+

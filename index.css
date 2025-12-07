@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Nanum+Pen+Script&family=Reenie+Beanie&family=Unlock&display=swap');
+
+p {
+  font-family: Caveat, cursive;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+main {
+  background-image: url("asset/thoughts2.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gallery {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.intro {
+  flex: 1;
+  max-width: 20%;
+  line-height: 1.8;
+  font-size: 22px;
+  padding-left: 0px;
+  padding-top: 40px;
+  text-align: left;
+
+}
+
+.main-title {
+  width: 450px; 
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  pointer-events: none; 
+}
+
+.draggable {
+  position: absolute;
+  cursor: grab;
+  transition: transform 0.2s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+img[alt="tomb meme"] {
+  width: 350px;
+}
+
+img[alt="logo meme"] {
+  width: 300px; 
+}
+
+img[alt="bread meme"] {
+  width: 250px; 
+}
+
+
+.spin {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+  color: #666;
+}
+

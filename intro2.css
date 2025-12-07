@@ -1,0 +1,85 @@
+/* 基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+/* 背景视频 */
+#bg-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* 内容容器 */
+#content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* 所有内容块默认隐藏 */
+.content-block {
+  opacity: 0;
+  transition: opacity 1.2s ease-in;
+  position: absolute;
+  width: 28%;        
+  line-height: 1.6;
+}
+
+/* 左中右布局 */
+.left {
+  top: 20%;
+  left: 6%;
+}
+
+.center {
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.right {
+  top: 20%;
+  right: 6%;
+}
+
+/* Next 按钮 */
+#next-button button {
+  padding: 12px 24px;
+  background: rgba(255,255,255,0.85);
+  color: #000;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.next-custom {
+  width: auto;
+  top: 80%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.text-img {
+  margin-top: 20px;     
+  width: 70%;           
+  height: auto;
+  border-radius: 6px;    
+}

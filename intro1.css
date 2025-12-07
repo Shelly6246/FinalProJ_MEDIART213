@@ -1,0 +1,96 @@
+/* 全局 */
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* 背景视频 */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 第一段文字 */
+.intro-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.click-indicator {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+    animation: blink 1.5s infinite;
+}
+
+/* 第二段内容 */
+.content {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    pointer-events: none;
+}
+
+/* 图片 */
+.photo-container img {
+    width: 180px;
+    margin: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 0.8s ease;
+}
+
+
+/* 跳转按钮 */
+.next-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 1.2rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+
+.next-button:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* 动画 */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}

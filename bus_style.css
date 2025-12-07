@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bus-scene {
+  position: relative;
+  width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+
+.bus-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.bus-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none; 
+}
